@@ -41,12 +41,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerItemClick
         travel2.setBaslik("Kangaroo Valleys Safari");
         travel2.setTanim("Located two hours south of Sydney in the Southern Highlands of New South Wales");
         arrList.add(travel2);
-
-
-
-
-
-
+        
         RecyclerViewAdapter adapter = new RecyclerViewAdapter(this, (ArrayList<Travel>) arrList, this);
         recyclerView.setAdapter(adapter);
 
@@ -54,49 +49,10 @@ public class MainActivity extends AppCompatActivity implements RecyclerItemClick
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(linearLayoutManager);
 
-
-
-
-
-
-
-
-
-
-        /* recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
-
-        List<Travel> adapterData = new ArrayList<>();
-        adapterData.add(new Travel());
-        adapterData.add(new Travel());
-
-
-
-
-
-
-
-        RecyclerViewAdapter adapter = new RecyclerViewAdapter(adapterData);
-        recyclerView.setAdapter(adapter);
-*/
-
-
-
-
-
-
     }
 
     @Override
     public void onImageClicked(Travel travel1) {
-        // start activity
-    /*String iki = "Kangaroo Valley";
-    Intent intent = new Intent(MainActivity.this,Second.class);
-
-        intent.putExtra(extras);
-
-                startActivity(intent);*/
-
        Bundle bundle = new Bundle();
        bundle.putSerializable("Travel",travel1);
        Intent intent = new Intent(MainActivity.this,Second.class);
