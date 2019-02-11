@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerItemClick
         travel2.setBaslik("Kangaroo Valleys Safari");
         travel2.setTanim("Located two hours south of Sydney in the Southern Highlands of New South Wales");
         arrList.add(travel2);
-        
+
         RecyclerViewAdapter adapter = new RecyclerViewAdapter(this, (ArrayList<Travel>) arrList, this);
         recyclerView.setAdapter(adapter);
 
